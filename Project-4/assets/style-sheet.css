@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=PT+Sans+Caption&family=Righteous&display=swap');
+
+*, 
+*:before, 
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+.container{
+    display:flex;
+    min-height:95vh;
+    min-width: 95vw;
+    flex-direction: column;
+}
+
+body {
+    background: linear-gradient(-46deg, #000000, #052868, #000,#071B40);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;   
+}
+
+header, footer{
+    flex: 0 1 60px;
+    line-height: 60px;
+    margin-top:10px;
+    width: 100vw;
+}
+
+main{
+    flex-direction: row;
+}
+
+aside, section{
+    /*background: purple;*/
+    flex: 0 200px;
+}
+
+aside{
+    border: solid;
+}
+
+section{
+    flex-grow: 1;
+}
+
+
+
+@keyframes gradient
+{
+   0%
+   {
+       background-position: 0% 50%;
+   } 
+   50%
+   {
+       background-position: 100% 50%;
+   } 
+   100%
+   {
+       background-position: 0% 50%;
+   } 
+}
+
+
+.splide__slide > img{
+    width: 50%;
+}
+
+section, 
+aside {
+    flex: 0 200px;
+}
+
+section {
+    flex-grow: 1;
+  }
+
+.container{
+    display: flex;
+    height: calc(100vh-60px);
+    flex-direction: column;
+    flex: 1;
+}
+
+header, footer{
+    flex: 0 1 60px;
+}
+
+header{
+    display:flex;
+    border:solid;
+    border-color: white;
+}
+
+h1{
+    color:white;
+    line-height: 2em;
+}
+
+h3{
+    color: white;
+    line-height: 2em;
+}
+
+main{
+    display: flex;
+    flex-grow: 1;
+    /*background:aquamarine;*/
+    width: 100vw;  
+}
+
+section, aside{
+    margin: 0px;
+
+}
+
+footer{
+    margin-top: 5%;
+    border:solid;
+    border-color:white;
+}
+
+section{
+    flex-grow: 1;
+    margin-top: 0.5em;
+}
+
+section.direction-box{
+    color:white;
+    line-height: 1.68em;
+    border: solid;
+    background: linear-gradient(-46deg, #052868, #071B40, #000,#071B40);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite; 
+}
+
+@keyframes gradient
+{
+   0%
+   {
+       background-position: 0% 50%;
+   } 
+   50%
+   {
+       background-position: 100% 50%;
+   } 
+   100%
+   {
+       background-position: 0% 50%;
+   } 
+}
+
+
+section > img{
+    margin-top:0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border:solid;
+    border-color:white;
+
+}
+
+section.direction-box > h1{
+    margin-top: 3em;
+    margin-bottom: 5%;
+    font-size: 2.5em;
+    margin-left: 1em;
+}
+
+section.direction-box > ul{
+    color: white;
+    margin-left: 5em;
+
+    
+}
+
+.splide{
+    padding: 0px;
+}
+
+
+
+.spotify{
+    
+    border:solid;
+    border-color:white;
+    margin-top: 0.5em;
+    background-color:black;
+}
+
